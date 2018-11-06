@@ -35,7 +35,7 @@ module RSpec
         end
 
         def failure_message
-          "\nexpected: #{@expected}\n     got: #{@actual}\n"
+          "\nSnapshots `#{@snapshot_name}` do not match:\n\n"
         end
 
         def snapshot_dir
